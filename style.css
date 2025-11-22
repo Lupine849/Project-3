@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/*-------------------------------------------
+common
+-------------------------------------------*/
+
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.catalog-antique-outer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #f5f5f5;
+}
+
+.footer-outer {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  background-color: #333;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+
+#header {
+  margin: 0;
+  background-image: url(mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#header h1 {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/*-------------------------------------------
+magazine
+-------------------------------------------*/
+
+#magazine {
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+
+#magazine h2 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+#magazine p {
+  margin: 24px 0 16px 0;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+#magazine .magazine-pic {
+  margin-top: 24px;
+  position: relative;
+}
+
+#magazine a {
+  text-decoration: none;
+  color: #333;
+}
+
+#magazine a:hover {
+  opacity: 0.7;
+}
+
+#magazine img {
+  width: 100%;
+}
+
+#magazine .magazine-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 290px;
+  margin: 0 auto;
+  padding: 16px 0 16px 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+#magazine h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+#magazine .magazine-info p {
+  margin: 0;
+  color: #fff;
+}
+
+/*-------------------------------------------
+fashion
+-------------------------------------------*/
+
+#fashion {
+  background-image: url(fashion.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 520px;
+  margin-bottom: 48px;
+}
+
+#fashion div {
+  text-align: center;
+}
+
+#fashion h2 {
+  margin: 0;
+  padding-top: 32px;
+  color: #333;
+}
+
+#fashion p {
+  margin: 16px 0 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#fashion a {
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 14px 36px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+#fashion a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+catalog
+-------------------------------------------*/
+
+#catalog img {
+  width: 100%;
+}
+
+#catalog h2 {
+  margin: 64px 0 0 0;
+  padding-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+#catalog p {
+  margin: 32px 0 0 0;
+  color: #333;
+  font-size: 14px;
+}
+
+/*-------------------------------------------
+antique
+-------------------------------------------*/
+
+#antique h2 {
+  margin: 64px 0 0 0;
+  padding-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+#antique p {
+  margin: 32px 0 0 0;
+  color: #333;
+  font-size: 14px;
+}
+
+#antique .antique-button {
+  text-align: center;
+}
+
+#antique a {
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 14px 36px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 56px;
+}
+
+#antique a:hover {
+  opacity: 0.7;
+}
+
+#antique img {
+  width: 100%;
+  margin-top: 56px;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+#footer .footer-logo {
+  text-align: center;
+}
+
+#footer .footer-logo:hover {
+  opacity: 0.7;
+}
+
+#footer h3 {
+  margin: 32px 0 0 0;
+  font-size: 16px;
+  color: white;
+}
+
+#footer ul {
+  margin: 16px 0 0 0;
+  padding: 0;
+  color: white;
+  font-size: 12px;
+  list-style: none;
+  line-height: 2;
+}
+
+#footer li {
+  position: relative;
+  padding-left: 10px;
+}
+
+#footer li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1px;
+  background-color: white;
+}
+
+#footer p {
+  margin: 16px 0 0 0;
+  font-size: 12px;
+  color: white;
+  line-height: 2;
+}
+
+.footer-copyright {
+  padding: 28px 0;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+large screen
+-------------------------------------------*/
+
+@media (min-width: 896px) {
+
+/*-------------------------------------------
+common
+-------------------------------------------*/
+
+  .catalog-antique-outer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+/*-------------------------------------------
+magazine
+-------------------------------------------*/
+
+  #magazine .magazine-wrapper {
+    display: flex;
+    gap: 2%;
+  }
+
+/*-------------------------------------------
+catalog
+-------------------------------------------*/
+
+  #catalog .catalog-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+  }
+
+  #catalog .catalog-inner {
+    flex: 1;
+  }
+
+  #catalog h2 {
+    margin: 0;
+  }
+
+/*-------------------------------------------
+antique
+-------------------------------------------*/
+
+  #antique {
+    margin-top: 128px;
+  }
+
+  #antique .antique-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+  }
+
+  #antique .antique-inner {
+    flex: 1;
+  }
+
+  #antique h2 {
+    margin: 0;
+  }
+
+  #antique img {
+    margin-top: 0;
+  }
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+  #footer .footer-wrapper {
+    display: flex;
+    margin: 72px 0 48px 0;
+  }
+
+  #footer h3 {
+    margin: 0;
+  }
+
+  #footer .footer-logo {
+    text-align: left;
+    flex: 1;
+    padding: 56px 0;
+  }
+
+  #footer .footer-list {
+    flex: 1;
+  }
+
+  #footer .footer-text {
+    flex: 1;
+  }
+
+}
